@@ -23,10 +23,10 @@ class SourceAPI1(BaseSource):
 
 class SourceAPI2(BaseSource):
     def get_url(self) -> str:
-        return f"https://api1.com?member_id={self.member_id}"
+        return f"https://api2.com?member_id={self.member_id}"
 
 
 class SourceAPI3(BaseSource):
     def get_url(self) -> str:
-        return f"https://api1.com?member_id={self.member_id}"
+        return f"https://api3.com?member_id={self.member_id}"
 
