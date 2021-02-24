@@ -1,0 +1,7 @@
+applocals.py
+env/
+__pycache__/
+nohup.out
+*.ipynb
+*.log
+*.sqlite3
