@@ -28,7 +28,7 @@ def policy_data(request):
     coalesce_strategy_name = request.query_params.get("coalesce_strategy")
     coalesce_strategy_name = coalesce_strategy_name or coalesce_strategies.DEFAULT_STRATEGY
     try:
-        coalesce_strategy = coalesce_strategies.get_coalesce_stragety(
+        coalesce_strategy = coalesce_strategies.get_coalesce_strategy(
             coalesce_strategy_name)
     except coalesce_strategies.UnknownStrategyError:
         return Response(

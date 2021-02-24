@@ -49,7 +49,7 @@ def max_strategy(standardized_responses:List[Dict]) -> Dict:
 
 DEFAULT_STRATEGY = 'average_strategy'
 
-def get_coalesce_stragety(strategy:str) -> Callable:
+def get_coalesce_strategy(strategy:str) -> Callable:
     if strategy == 'average_strategy':
         return average_strategy
     elif  strategy == 'max_strategy':
